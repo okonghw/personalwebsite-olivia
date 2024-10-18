@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7ECFB; /* Softer pastel lavender background */
+    color: #524669; /* Darker pastel purple for text */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    position: relative; /* For Luni runner positioning */
+}
+
+/* Sticky Footer Setup */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+/* Header */
+header {
+    background-color: #E8D4F7; /* Light pastel lavender for header */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 2s ease forwards; /* Add fade-in animation */
+}
+
+header h1 {
+    font-size: 3.5em; /* Increased font size for emphasis */
+    margin: 0;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    padding: 40px;
+}
+
+.intro img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+}
+
+.intro img:hover {
+    transform: scale(1.1); /* Scale the image slightly */
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 215, 0, 0.5); /* Yellow glow effect */
+}
+
+.intro h2 {
+    color: #9C88C7; /* Slightly darker lavender */
+    font-size: 2.5em; /* Increased font size for headings */
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.intro p {
+    font-size: 1.2em; /* Increased font size for paragraph */
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+/* Favorites Section */
+.favorites {
+    background-color: #F5E7FD; /* Soft pastel lavender */
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorites h2 {
+    font-size: 2.5em; /* Increased font size for heading */
+    color: #9C88C7; /* Heading color */
+    margin-bottom: 15px; /* Added margin for spacing */
+}
+
+.favorites ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.favorites li {
+    font-size: 1.2em; /* Increased font size for list items */
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+/* Footer */
+footer {
+    background-color: #D8C3EF; /* Pastel lavender for footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Luni Image Follower */
+.luni-runner {
+    width: 60px; /* Small version of Luni running image */
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Ensures it doesn't interfere with cursor interaction */
+    z-index: 100;
+    transition: transform 0.1s ease-out; /* Smooth movement */
+}
+
+/* Interactive Animations */
+
+/* Footer hover effect */
+footer:hover {
+    background-color: #BFA5E3; /* Slightly deeper pastel */
+    transition: background-color 0.5s ease;
+}
