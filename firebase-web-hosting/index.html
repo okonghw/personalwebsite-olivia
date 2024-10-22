@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luni's Website</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/drawing.js"></script>
 </head>
 
 <body>
@@ -34,9 +34,20 @@
     <!-- Image of Luni that will follow the cursor -->
     <img src="luni_small.png" alt="Luni Running" class="luni-runner">
 
+    <!-- Drawing canvas -->
+    <canvas id="drawingCanvas"></canvas>
+    
+    <!-- Color picker -->
+    <div class="color-picker">
+        <div class="color-option active" style="background-color: #FF69B4" data-color="#FF69B4"></div>
+        <div class="color-option" style="background-color: #9C88C7" data-color="#9C88C7"></div>
+        <div class="color-option" style="background-color: #87CEEB" data-color="#87CEEB"></div>
+        <div class="color-option" style="background-color: #90EE90" data-color="#90EE90"></div>
+        <div class="color-option" style="background-color: #FFD700" data-color="#FFD700"></div>
+    </div>
+
     <footer>
         <p>&copy; 2024 Luni's Adventures | Follow her on Instagram: @luni.maltipoo</p>
     </footer>
 </body>
-
 </html>
